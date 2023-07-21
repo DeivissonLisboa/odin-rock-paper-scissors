@@ -37,4 +37,4 @@ function game() {
   console.log(`Score: ${score}`)
 }
 
-game()
+// game()
