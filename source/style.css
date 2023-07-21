@@ -86,31 +86,31 @@ body {
   background-repeat: no-repeat;
 }
 
-.display[data-choice="rock"] {
+.display[data-selection="rock"] {
   background-image: url("../images/rock.svg");
   background-size: 60%;
 }
 
-.display[data-choice="paper"] {
+.display[data-selection="paper"] {
   background-image: url("../images/paper.svg");
 }
 
-.display[data-choice="scissors"] {
+.display[data-selection="scissors"] {
   background-image: url("../images/scissors.svg");
 }
 
-.display[data-choice="dragon"] {
+.display[data-selection="dragon"] {
   background-image: url("../images/dragon.svg");
 }
 
-.choices {
+.selections {
   display: flex;
   gap: 1rem;
   flex-wrap: wrap;
   justify-content: center;
 }
 
-.choice {
+.selection {
   width: 10rem;
   height: 10rem;
   border: none;
@@ -119,12 +119,12 @@ body {
   cursor: pointer;
 }
 
-.choice img {
+.selection img {
   width: 60%;
   filter: drop-shadow(5px 5px rgba(0, 0, 0, 0.25));
 }
 
-.choice#rock img {
+.selection#rock img {
   width: 50%;
 }
 
@@ -140,12 +140,12 @@ body {
   cursor: pointer;
 }
 
-.choice:hover,
+.selection:hover,
 #play:hover {
   transform: scale(1.1);
 }
 
-.choice:active,
+.selection:active,
 #play:active {
   transform: scale(0.98);
 }
