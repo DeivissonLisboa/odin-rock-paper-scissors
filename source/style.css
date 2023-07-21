@@ -158,3 +158,16 @@ body {
 #play:disabled {
   opacity: 0.5;
 }
+
+@media (width < 720px) {
+  body {
+    padding-bottom: 2rem;
+  }
+}
+
+@media (width > 1280px) {
+  .result {
+    padding-left: 20%;
+    padding-right: 20%;
+  }
+}
