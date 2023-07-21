@@ -1,5 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
 
+:root {
+  --clr-1: #f0f0f0;
+  --clr-2: #222;
+  --clr-3: #9bc53d;
+  --clr-4: #e63946;
+}
+
 *,
 *::before,
 *::after {
@@ -11,4 +18,134 @@
 body {
   min-height: 100vh;
   font-family: "Roboto", sans-serif;
+  display: grid;
+  place-items: center;
+  background-color: var(--clr-2);
+  color: var(--clr-1);
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container > * + * {
+  margin-top: 2rem;
+}
+
+.result {
+  width: 100vw;
+  margin-bottom: -2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 0.5rem 1rem;
+  background-color: var(--clr-1);
+  color: var(--clr-2);
+  font-size: 2rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.arena {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  width: 100vw;
+  padding: 2rem 0;
+  background-color: var(--clr-1);
+  color: var(--clr-2);
+}
+
+.arena.win {
+  background-color: var(--clr-3);
+}
+
+.arena.lose {
+  background-color: var(--clr-4);
+}
+
+.display {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 15rem;
+  height: 15rem;
+  border-radius: 50%;
+  background-color: var(--clr-2);
+  color: var(--clr-1);
+  font-size: 2rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  background-size: 70%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.display[data-choice="rock"] {
+  background-image: url("../images/rock.svg");
+  background-size: 60%;
+}
+
+.display[data-choice="paper"] {
+  background-image: url("../images/paper.svg");
+}
+
+.display[data-choice="scissors"] {
+  background-image: url("../images/scissors.svg");
+}
+
+.display[data-choice="dragon"] {
+  background-image: url("../images/dragon.svg");
+}
+
+.choices {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.choice {
+  width: 10rem;
+  height: 10rem;
+  border: none;
+  border-radius: 50%;
+  background-color: var(--clr-1);
+  cursor: pointer;
+}
+
+.choice img {
+  width: 60%;
+  filter: drop-shadow(5px 5px rgba(0, 0, 0, 0.25));
+}
+
+.choice#rock img {
+  width: 50%;
+}
+
+#play {
+  font-size: 2rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: var(--clr-2);
+  background-color: var(--clr-1);
+  border: none;
+  border-radius: 5px;
+  padding: 1rem 3rem;
+  cursor: pointer;
+}
+
+.choice:hover,
+#play:hover {
+  transform: scale(1.1);
+}
+
+.choice:active,
+#play:active {
+  transform: scale(0.98);
 }

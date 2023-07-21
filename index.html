@@ -9,10 +9,13 @@
   </head>
   <body>
     <div class="container">
-      <h2>SCORE: <span id="score"></span></h2>
+      <div class="result">
+        <p class="score">score: <span id="score">0</span></p>
+        <span id="status">Best of five</span>
+      </div>
       <div class="arena">
-        <div id="player" class="display"></div>
-        <div id="computer" class="display">?</div>
+        <div id="player" class="display" data-choice="">Player</div>
+        <div id="computer" class="display" data-choice="">Computer</div>
       </div>
       <div class="choices">
         <button id="rock" class="choice">
@@ -28,6 +31,7 @@
           />
         </button>
       </div>
+      <button id="play">Play</button>
     </div>
   </body>
 </html>
