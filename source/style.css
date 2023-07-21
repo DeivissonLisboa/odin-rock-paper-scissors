@@ -5,6 +5,7 @@
   --clr-2: #222;
   --clr-3: #9bc53d;
   --clr-4: #e63946;
+  --clr-5: #fcbf49;
 }
 
 *,
@@ -67,6 +68,10 @@ body {
 
 .arena.lose {
   background-color: var(--clr-4);
+}
+
+.arena.tie {
+  background-color: var(--clr-5);
 }
 
 .display {
