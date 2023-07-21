@@ -1,12 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="script.js" defer></script>
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+    <title>Rock, Paper, Scissors</title>
+  </head>
+  <body>
+    <div class="container">
+      <h2>SCORE: <span id="score"></span></h2>
+      <div class="arena">
+        <div id="player" class="display"></div>
+        <div id="computer" class="display">?</div>
+      </div>
+      <div class="choices">
+        <button id="rock" class="choice">
+          <img src="./images/rock.svg" alt="close hand forming a fist" />
+        </button>
+        <button id="paper" class="choice">
+          <img src="./images/paper.svg" alt="open hand" />
+        </button>
+        <button id="scissors" class="choice">
+          <img
+            src="./images/scissors.svg"
+            alt="hand close doing the peace sign"
+          />
+        </button>
+      </div>
+    </div>
+  </body>
 </html>
