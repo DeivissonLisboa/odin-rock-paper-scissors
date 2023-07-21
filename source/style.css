@@ -50,7 +50,7 @@ body {
   text-transform: uppercase;
 }
 
-.arena {
+#arena {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -62,15 +62,15 @@ body {
   color: var(--clr-2);
 }
 
-.arena.win {
+#arena[data-status="win"] {
   background-color: var(--clr-3);
 }
 
-.arena.lose {
+#arena[data-status="lose"] {
   background-color: var(--clr-4);
 }
 
-.arena.tie {
+#arena[data-status="tie"] {
   background-color: var(--clr-5);
 }
 
